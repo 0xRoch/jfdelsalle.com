@@ -1,0 +1,519 @@
+/*------------------------------------------------------------------------*/
+/* galleria_wp.css : galleria CSS file   V1.2.2  Build 704   6/14 2008    */
+/*------------------------------------------------------------------------*/
+#galleria_wp  .galleria_wp {
+	margin:  0;
+	padding: 0;
+	text-decoration:none;
+	list-style-type: none;
+	list-style-image: none;
+}
+#galleria_wp  .galleria_wp img {
+	display: block;
+	margin:  0;
+	padding: 0;
+	border: none;
+}
+
+#galleria_wp .galleria img {
+	margin:  0;
+	padding: 0;
+	border: none;
+}
+
+/* stage */
+#galleria_wp  .galleria_wrapper img {
+	display: block;
+	margin:  0;
+	padding: 0;
+	border: none;
+}
+
+#galleria_wp img.replaced {
+	margin:  0 auto;
+	padding: 0;
+	display: block;
+}
+
+#galleria_wp  .galleria_wp ul{
+	list-style:none;
+}
+
+#galleria_wp  .galleria_wp li {
+	display:block;
+	float:left;
+	width: 75px;
+	height:75px;
+	border: 2px solid #bbb;
+	overflow:hidden;
+}
+
+#galleria_wp  .galleria_wp li a.galleria {
+	display:none;
+}
+
+#galleria_wp  .galleria_wp li a.ngg_album {
+	display:block;
+}
+
+#galleria_wp  .galleria li img.thumb {
+	cursor:pointer;
+	margin:  0;
+	padding: 0;
+	top:auto;
+	left:auto;
+	display:block;
+	width:auto;
+	height:auto
+}
+
+* html #galleria_wp  .galleria_wp li div span{width:400px} /* MSIE bug */
+
+/*===============================================================*/
+/*     common CSS styles for jCarousel
+/*===============================================================*/
+/*
+ * This <div> element is wrapped by jCarousel around the list
+ * and has the classname "jcarousel-container".
+ */
+.jcarousel-container {
+    position: relative;
+}
+
+.jcarousel-clip {
+    z-index: 2;
+    padding: 0;
+    margin:  2px;
+    overflow: hidden;
+    position: relative;
+}
+
+.jcarousel-list {
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel-list li,
+.jcarousel-item {
+    float: left;
+    list-style: none;
+    /* We set the width/height explicitly. No width/height causes infinite loops. */
+    width:  75px;
+    height: 75px;
+}
+
+/**
+ * The buttons are added dynamically by jCarousel before
+ * the <ul> list (inside the <div> described above) and
+ * have the classnames "jcarousel-next" and "jcarousel-prev".
+ */
+.jcarousel-next {
+    z-index: 3;
+    display: none;
+}
+
+.jcarousel-prev {
+    z-index: 3;
+    display: none;
+}
+
+/******************************************************************/
+/* galleria WP standard class                    added by Y2      */
+/******************************************************************/
+#galleria_wp  div.galleria_std  {
+	width: 100%;
+	margin: 0 auto;
+	background-color: transparent;
+}
+
+#galleria_wp  div.galleria_std  
+.galleria_container {
+	width: 98%;
+	margin: 0 auto;
+	margin-top: 1.4em;
+	background-color: transparent;
+}
+#galleria_wp  div.galleria_std  
+.galleria_wrapper {
+	width: 98%;
+	margin: 5px auto;
+	overflow: hidden;
+}
+
+#galleria_wp  .galleria_std  
+.galleria_wrapper img {
+	display: block;
+	float: none ;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#galleria_wp  .galleria_std  
+div ul {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+	list-style: none;
+}
+#galleria_wp  .galleria_std 
+div ul:after {
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+
+/* default thumbnail size */
+#galleria_wp  .galleria_std  
+div ul li {
+	display: block;
+	float: left;
+	margin: 0;
+	overflow: hidden;
+	width:  75px;
+	height: 75px;
+	border:  2px solid #bbb;
+}
+
+/* default thumbnail size (NextGEN Gallery album's thumbnail)*/
+#galleria_wp  .galleria_std  
+div ul li.ngg_album {
+	display: block;
+	float: left;
+	margin: 0;
+	overflow: hidden;
+	width: 120px;
+	height: 90px;
+	border:  2px solid #bbb;
+}
+
+#galleria_wp  .galleria_std  
+div ul li:hover {
+	border: 2px solid #222;
+}
+#galleria_wp  .galleria_std  
+div ul li.active {
+	border: 2px solid #99f;
+}
+
+#galleria_wp  .galleria_std  
+div ul li img.thumb {
+	cursor: pointer;
+	top: auto;
+	left: auto;
+	display: block;
+	width: auto;
+	height: auto
+}
+
+#galleria_wp  .galleria_std 
+.galleria_wp_thumb_caption  {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 1.4em;
+	margin: 0 auto;
+	margin-top : -2.0em;
+	overflow: hidden;
+	background-color: transparent;
+	z-index: 5;
+}
+
+#galleria_wp  .galleria_std 
+.galleria_wp_thumb_caption  span.msg {
+	display: block;
+	position; relative;
+	margin: 0 auto;
+	width : 24em;
+	font-size: 0.9em;
+	font-weight: bold;
+	overflow: hidden;
+	text-align: center;
+	background-color: transparent;
+	z-index: 6;
+}
+#galleria_wp  .galleria_std 
+.galleria_wp_thumb_caption  span.first {
+	display: block;
+	position: absolute;
+	left: 5px; top: 0;
+	overflow: hidden;
+	background-color: transparent;
+	z-index: 7;
+}
+#galleria_wp  .galleria_std 
+.galleria_wp_thumb_caption  span.last {
+	display: block;
+	position: absolute;
+	right: 5px; top: 0;
+	overflow: hidden;
+	background-color: transparent;
+	z-index: 7;
+}
+
+#galleria_wp  .galleria_std  
+span.thumb_caption {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0.83em;
+	font-weight: bold;
+	color: #888;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica,Tahoma, Verdana, sans-serif;
+}
+
+#galleria_wp  .galleria_std  
+span.caption0 {
+	display: block;
+	text-align: center;
+	font-size: 0.83em;
+	color: #888;
+}
+
+#galleria_wp  .galleria_std  
+span.caption1 {
+	display: block;
+	text-align: center;
+	font-size: 0.9em;
+	color: #555;
+}
+
+#galleria_wp  .galleria_std
+span.caption2 {
+	display: block;
+	text-align: center;
+	font-size: 0.83em;
+	color: #888;
+}
+
+#galleria_wp  .galleria_std  
+.galleria_nav {
+	display: none;
+	margin-top: 0.2em;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+#galleria_wp  .galleria_std  
+div button.play {
+	display: none;
+	float: right;
+	margin: 0.2em 1.0em  0.2em 0;
+}
+
+#galleria_wp  .galleria_std  
+div a {
+	text-decoration:none;
+	outline:none;
+	font:bold 80%  helvetica,sans-serif;
+	color:#348;
+}
+#galleria_wp  .galleria_std  
+div a:hover {
+	color:#67a;
+}
+
+/******************************************************************/
+/* galleria WP "black" class                     added by Y2      */
+/******************************************************************/
+#galleria_wp  div.galleria_black  {
+	width: 100%;
+	margin: 0 auto;
+	background-color: black;
+}
+
+#galleria_wp  div.galleria_black  
+.galleria_container {
+	width: 98%;
+	margin: 0 auto;
+	margin-top: 1.4em;
+	background-color: transparent;
+}
+#galleria_wp  div.galleria_black  
+.galleria_wrapper {
+	width: 98%;
+	margin: 5px auto;
+	overflow: hidden;
+}
+
+#galleria_wp  .galleria_black  
+.galleria_wrapper img {
+	display: block;
+	float: none ;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#galleria_wp  .galleria_black  
+div ul {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+	list-style: none;
+}
+#galleria_wp  .galleria_black 
+div ul:after {
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+
+/* default thumbnail size */
+#galleria_wp  .galleria_black  
+div ul li {
+	display: block;
+	float: left;
+	margin: 0;
+	overflow: hidden;
+	width:  75px;
+	height: 75px;
+	border:  2px solid #333;
+}
+
+/* default thumbnail size (NextGEN Gallery album's thumbnail)*/
+#galleria_wp  .galleria_black  
+div ul li.ngg_album {
+	display: block;
+	float: left;
+	margin: 0;
+	overflow: hidden;
+	width: 120px;
+	height: 90px;
+	border:  2px solid #333;
+}
+
+#galleria_wp  .galleria_black  
+div ul li:hover {
+	border: 2px solid #bbb;
+}
+#galleria_wp  .galleria_black  
+div ul li.active {
+	border: 2px solid #99f;
+}
+
+#galleria_wp  .galleria_black  
+div ul li img.thumb {
+	cursor: pointer;
+	top: auto;
+	left: auto;
+	display: block;
+	width: auto;
+	height: auto
+}
+
+#galleria_wp  .galleria_black 
+.galleria_wp_thumb_caption  {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 1.4em;
+	margin: 0 auto;
+	margin-top : -2.0em;
+	overflow: hidden;
+	background-color: transparent;
+	z-index: 5;
+}
+
+#galleria_wp  .galleria_black 
+.galleria_wp_thumb_caption  span.msg {
+	display: block;
+	position; relative;
+	margin: 0 auto;
+	width : 24em;
+	font-size: 0.9em;
+	font-weight: bold;
+	overflow: hidden;
+	text-align: center;
+	background-color: transparent;
+	z-index: 6;
+}
+#galleria_wp  .galleria_black 
+.galleria_wp_thumb_caption  span.first {
+	display: block;
+	position: absolute;
+	left: 5px; top: 0;
+	overflow: hidden;
+	background-color: transparent;
+	z-index: 7;
+}
+#galleria_wp  .galleria_black 
+.galleria_wp_thumb_caption  span.last {
+	display: block;
+	position: absolute;
+	right: 5px; top: 0;
+	overflow: hidden;
+	background-color: transparent;
+	z-index: 7;
+}
+
+#galleria_wp  .galleria_black  
+span.thumb_caption {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0.83em;
+	font-weight: bold;
+	color: #888;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica,Tahoma, Verdana, sans-serif;
+}
+
+#galleria_wp  .galleria_black  
+span.caption0 {
+	display: block;
+	text-align: center;
+	font-size: 0.83em;
+	color: #888;
+}
+
+#galleria_wp  .galleria_black  
+span.caption1 {
+	display: block;
+	text-align: center;
+	font-size: 0.9em;
+	color: #888;
+}
+
+#galleria_wp  .galleria_black
+span.caption2 {
+	display: block;
+	text-align: center;
+	font-size: 0.83em;
+	color: #555;
+}
+
+#galleria_wp  .galleria_black  
+.galleria_nav {
+	display: none;
+	margin-top: 0.2em;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+#galleria_wp  .galleria_black  
+div button.play {
+	display: none;
+	float: right;
+	margin: 0.2em 1.0em  0.2em 0;
+}
+
+#galleria_wp  .galleria_black  
+div a {
+	text-decoration:none;
+	outline:none;
+	font:bold 80%  helvetica,sans-serif;
+	color:#348;
+}
+#galleria_wp  .galleria_black  
+div a:hover {
+	color:#67a;
+}
